@@ -1,0 +1,14 @@
+@mixin subtitle-btn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+@mixin section-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+}

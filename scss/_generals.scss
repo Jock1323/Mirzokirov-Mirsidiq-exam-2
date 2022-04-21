@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .container{
     max-width: 1380px;
     margin: 0 auto;
@@ -13,4 +16,25 @@ a{
 }
 li{
     list-style: none;
+}
+@media only screen and (max-width:992px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media only screen and (max-width:767px){
+    .container{
+        max-width:730px;
+    }
+}
+@media only screen and (max-width:576px){
+    .container{
+        max-width: 550px;
+    }
+}
+@media only screen and (max-width:320px){
+    .container{
+        max-width:290px;
+        padding: 0 10px;
+    }
 }
