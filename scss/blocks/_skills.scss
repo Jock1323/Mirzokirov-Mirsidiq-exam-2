@@ -1,56 +1,82 @@
-.skills{
+.skills {
+    display: none;
     padding-top: 72px;
-    &__title{
+
+    &__title {
         @include section-title;
         text-align: center;
         margin-bottom: 92px;
     }
 }
-.skills-inner{
+@media only screen and (max-width:992px) {
+    .skills{
+        &__title{
+            margin-bottom: 58px;
+        }
+    }
+}
+@media only screen and (max-width:767px) {
+    .skills{
+        &__title{
+            margin-bottom:37px;
+        }
+    }
+}
 
-    .positioned{
+.skills-inner {
+
+    .positioned {
         margin-top: -45px;
     }
-    .margined{
-       margin-top: 0;
-       margin-bottom: 20px;
-       max-width: 335px;
+    .changiable{
+        margin-top:0;
     }
     .compressed{
-        padding-left:30px;
-        padding-right:10px;
+        margin-top: 35px;
     }
+    .last-info{
+        max-width:335px;
+    }
+
     display: flex;
     justify-content: space-between;
-    &__wrapper-2{
+
+    &__wrapper-2 {
         display: flex;
     }
+
     &__one{
-        background-color:$skills-bg-color;
+        background-color: $skills-bg-color;
         border-radius: 10px;
-        max-width:32%;
-        padding: 35px 22px 92px 22px;
+        width:40%;
+        padding: 35px 22px 72px 22px;
     }
-    &__img-1{
+
+    &__img-1 {
         max-width: 100%;
         margin-bottom: 4px;
+        margin-top:50px;
     }
-    &__info{
-        padding-left:22px;
+
+    &__info {
+        padding-left: 22px;
     }
-    &__title{
+
+    &__title {
         @include section-title;
         font-size: 30px;
-        color:$btn-color;
+        color: $btn-color;
     }
-    &__text{
+
+    &__text {
         font-size: 16px;
-        line-height:24px;
+        line-height: 24px;
         margin-top: 5px;
         margin-bottom: 36px;
-        color:$primary-text-color;
+        color: $primary-text-color;
     }
-    &__btn{
+
+    &__btn {
         display: inline-block;
         font-weight: 500;
         font-size: 18px;
@@ -60,130 +86,256 @@
         border-radius: 5px;
         background-color: $btn-color;
     }
-    &__two{
+
+    &__two {
         padding: 0 19px 44px;
         margin: 0 18px;
-        background-color:$skills-bg-color;
+        background-color: $skills-bg-color;
         border-radius: 10px;
-        max-width:434px;
+        max-width:435px;
     }
-    &__img-2{
+
+    &__img-2 {
         max-width: 293px;
         max-height: 293px;
         margin-left: auto;
     }
-    &__three{
+
+    &__three {
         background-color: $skills-bg-color;
         padding: 0;
         padding-top: 10px;
         padding-bottom: 44px;
         border-radius: 10px;
-        max-width: 435px;
+        max-width:435px;
     }
-    &__img-3{
+
+    &__img-3 {
         max-width: 371px;
         max-height: 247px;
         margin-right: auto;
     }
-    &__four{
+
+    &__four {
         display: flex;
         flex-direction: row-reverse;
         margin-top: 20px;
         margin-left: 18px;
         padding: 36px 25px;
-        max-width: 885px;
-        max-height: 343px;
-        background-color:$skills-bg-color;
+        max-width:100%;
+        background-color: $skills-bg-color;
         border-radius: 10px;
     }
-    &__img-4{
+
+    &__img-4 {
         max-width:382px;
         margin-left: auto;
     }
+
     &__img-1 img,
     &__img-2 img,
     &__img-3 img,
-    &__img-4 img{
+    &__img-4 img {
         width: 100%;
         height: 100%;
     }
-   @media only screen and (max-width:1200px){
+    @media only screen and (max-width:1200px){
+        .changiable{
+            margin-top:40px;
+        }
+        .compressed{
+            margin-top:60px;
+        }
+    }
+    @media only screen and (max-width:992px) {
+        .positioned {
+            margin-top: -32px;
+        }
+
+        .changiable {
+            margin-top:0px;
+        }
+
+        .compressed {
+            padding: 0;
+            margin-top:40px;
+        }
+
+        &__info {
+            padding: 0;
+        }
+        &__img-1 {
+            max-width: 100%;
+            margin-bottom: 4px;
+            margin-top:20px;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 21px;
+            margin-top: 0;
+        }
+
+        &__btn {
+            font-size: 18px;
+            line-height: 27px;
+            padding: 15px 40px;
+        }
+
+        &__two {
+            max-width:303px;
+            padding: 0 10px 30px 20px;
+        }
+
+        &__img-2 {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        &__three {
+            max-width:303px;
+            padding: 0 20px;
+        }
+
+        &__img-3 {
+            max-width: 243px;
+            max-height: 162px;
+        }
+
+        &__four {
+            max-width: 616px;
+            padding: 0 0 30px 29px;
+        }
+    }
+
+    @media only screen and (max-width:858px) {
+
+        .changiable {
+            margin-top:40px;
+        }
+        .compressed{
+            margin-top:60px;
+        }
+    }
+    @media only screen and (max-width:767px){
+       .changiable {
+            margin-top:12%;
+        }
+        .compressed{
+            padding: 0 10px;
+            margin-top:20px;
+        }
+        .last-info{
+            max-width: 251px;
+        }
+        &__one{
+            padding: 0;
+            padding-top: 31px;
+            padding-bottom: 37px;
+            max-width: 224px;
+        }
+        &__info{
+            padding: 0 10px;
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__text{
+            margin-bottom:13px;
+            font-size: 13px;
+            line-height: 19px;
+        }
+        &__two{
+            max-width:227px;
+            padding: 0;
+            padding-top: 14px;
+            padding-bottom: 27px;
+            margin: 0 12px;
+        }
+        &__three{
+            padding: 0;
+            padding-top: 34px;
+        }
+        &__img-3{
+            margin-bottom: 5px;
+        }
+        &__four{
+            padding: 0 26px 10px 10px;
+            margin: 15px 0 0 10px;
+        }
+        &__img-4{
+            max-width:250px;
+            height: 134px;
+            margin-top: 59px;
+        }
+        &__btn{
+            padding: 13px 42px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    @media only screen and (max-width:688px){
+        .compressed{
+            margin-top: 40px;
+        }
+        .changiable{
+            margin-top:30%;
+        }
+    }
+    @media only screen and (max-width:680px){
+       flex-direction: column;
+       position: relative;
+       &__one{
+        max-width:48%;
+        width: 100%;
+       }
+       &__img-1{
+           margin-top: 0;
+       }
+       &__img-2{
+           margin-top:60px;
+           min-height: 290px;
+       }
+       .btn-2{
+           margin-top:90px;
+       }
        .changiable{
-           margin-top:10%;
+    margin-top: 0;        
        }
-   }
-   @media only screen and (max-width:1130px){
-       .changiable{
-           margin-top:16%;
+       &__wrapper{
+           flex-direction: column;
+           justify-content: center;
        }
-       .liquid{
-           margin-top: 10%;
+       &__two{
+           position: absolute;
+           top: 0;
+           right:0;
+           max-width:48%;
+           padding-bottom:35px;
        }
-   }
-   @media only screen and (max-width:992px){
-    .positioned{
-        margin-top: -32px;
+       &__four{
+           position: absolute;
+           top: 59%;
+           right:10px;
+           max-width:48%;
+           flex-direction: column;
+           padding-bottom:45px;
+       }
+       &__three{
+           max-width: 48%;
+           padding-bottom:30px;
+           margin-top: 20px;
+       }
     }
-    .changiable{
-        margin-top:30px;
+    @media only screen and (max-width:649px){
+        position: static;
+        &__two,
+        &__four{
+            position: static;
+        }
     }
-    .compressed{
-        padding: 0;
-    }
-    .margined{
-        max-width: 310px;
-        margin-bottom: 10px;
-    }
-    .liquid{
-        margin:2%;
-    }
-    &__one{
-        padding: 0 20px 52px 20px;
-    }
-    &__info{
-        padding: 0;
-    }
-    &__title{
-        font-size: 22px;
-    }
-    &__text{
-        font-size: 14px;
-        line-height: 21px;
-        margin-top: 0;
-    }
-    &__btn{
-        font-size: 18px;
-        line-height: 27px;
-        padding: 15px 40px;
-    }
-    &__two{
-        max-width:302px;
-        padding: 0 10px 30px 20px;
-    }
-    &__img-2{
-        max-width: 200px;
-        max-height: 200px;
-    }
-    &__three{
-        max-width:304px;
-        padding: 0 20px;
-    }
-    &__img-3{
-        max-width: 243px;
-        max-height: 162px;
-    }
-    &__four{
-        max-width:616px;
-        // max-height:241px;
-        padding: 0 0 34px 29px;
-    }
-   }
-   @media only screen and (max-width:845px){
-    .liquid{
-        margin-top:10%;
-    }
-    .changiable{
-        margin-top:50px;
-    }
-   }    
 }

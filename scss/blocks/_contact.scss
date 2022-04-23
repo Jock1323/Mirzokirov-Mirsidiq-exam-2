@@ -1,0 +1,124 @@
+.contact{
+    .ghost{
+        display: none;
+    }
+    .hidden{
+        display:block;
+    }
+    padding-top: 260px;
+    &__flex{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    &__text{
+        max-width: 776px;
+        margin-bottom: 52px;
+    }
+    input,
+    &__btn{
+        display: inline-block;
+        border: 1px solid #8F95A5;
+        width:65%;
+        padding: 26px 30px;
+        height: 80px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__btn{
+        width:30%;
+        margin-left:auto;
+        background-color: $btn-color;
+        color: #fff;
+        transition: all .3s;
+    }
+
+    &__btn:hover{
+        border-color: $btn-color;
+        background-color: #fff;
+        color: $btn-color;
+        cursor: pointer;
+    }
+    &__img{
+        max-width: 477px;
+        max-height: 429px;
+    }
+    @media only screen and (max-width:992px){
+        padding-top: 65px;
+        &__flex{
+            justify-content:flex-end;
+        }
+        &__info{
+            width:60%;
+            margin-left: auto;
+        }
+        &__title{
+            margin-bottom: 0;
+        }
+        &__img{
+            max-width: 300px;
+            max-height: 300px;
+        }
+        &__text{
+            max-width:450px;
+            margin-bottom: 26px;
+        }
+        &__btn{
+            padding: 15px 20px;
+        }
+    }
+    @media only screen and (max-width:767px){
+        &__img{
+            max-width: 233px;
+            max-height: 210px;
+        }
+        &__btn,
+        input{
+            height: 50px;
+        }
+        &__btn{
+            padding-top: 14px;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .hidden{
+            display: none;
+        }
+        .ghost{
+            display: block;
+        }
+        &__text{
+            margin: 0 auto;
+        }
+        &__flex{
+            flex-direction: column-reverse;
+        }
+        &__info{
+            width: 100%;
+        }
+        form{
+            text-align: center;
+        }
+        &__btn,
+        input{
+            margin-left: -20px;
+            height: 60px;
+            margin-top: 60px;
+        }
+    }
+    @media only screen and (max-width:400px){
+        form{
+            margin-top: 31px;
+        }
+        input,
+        &__btn{
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__btn{
+            margin-top: 17px;
+        }
+
+    }
+}

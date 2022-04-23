@@ -1,0 +1,46 @@
+.footer{
+    padding-top: 133px;
+    &__flex,
+    &__list{
+        @include flex;
+        justify-content: space-between;
+    }
+    &__link{
+        font-size: 24px;
+        line-height: 26px;
+        color: #8F95A5;
+    }
+    .line{
+        width: 100%;
+        display: block;
+        height: 1px;
+        background-color: #C4C4C4;
+        margin-bottom: 31px;
+    }
+    @media only screen and (max-width:992px){
+        padding-top: 112px;
+        &__link{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    @media only screen and (max-width:576px){
+        padding:57px 0;
+        &__link{
+            font-size: 12px;
+            line-height:18px;
+        }
+        &__flex{
+            flex-direction: column;
+        }
+        &__list{
+            margin-top: 15px;
+        }
+    }
+    @media only screen and (max-width:320px){
+        &__link{
+            font-size: 11px;
+            line-height: 15px;
+        }
+    }
+}
