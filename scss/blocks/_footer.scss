@@ -1,5 +1,6 @@
 .footer{
     padding-top: 133px;
+    padding-bottom: 64px;
     &__flex,
     &__list{
         @include flex;
